@@ -6,6 +6,7 @@ export default class StartScreen extends React.Component {
         return(
             <View style={styles.background}>
                     <View style={{justifyContent: 'center', alignItems: "center", backgroundColor: '#8082d6', width: '100%', height: '100%'}}>
+                    <ImageBackground style={[style.containerLogo]} source={require('../assets/images/LogoBranca.png')} />
                     <Text style={[style.text]}>Game</Text>
                     <Text style={[style.title]}>CCTI Quiz</Text>
 
@@ -163,6 +164,14 @@ const styles = StyleSheet.create({
         backgroundColor: '#252c4a',
         width: '100%',
         height: '100%'
+    },
+    containerLogo: {
+        justifyContent: 'center', 
+        alignItems: "center",
+        width: 200,
+        height: 260,
+        marginLeft: 20,
+        marginBottom: 30
     },
     button: {
         backgroundColor: '#19F29E',

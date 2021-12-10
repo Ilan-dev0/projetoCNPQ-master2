@@ -47,10 +47,6 @@ export default class QuizSelection extends React.Component {
                             this.props.navigation.navigate('RenderQuiz', {QuizCounty: 'EQ', language})
                         }
                       }}>
-
-                          
-
-
                         <Image style={[style.carouselItemImage]} source={{uri: `${item.image}`}} />
                         <View style={[style.carouselItemContainer]}>
                         <Text style={[style.title2]}>{item.title}</Text>
@@ -73,7 +69,7 @@ export default class QuizSelection extends React.Component {
                             </TouchableOpacity>
                         </View>
                         <View style={style.container3}>
-                            <Text style={[style.labelStyle, style.title]}>Selecione o País: </Text>
+                            <Text style={[style.labelStyle, style.title]}>Selecíone o País: </Text>
                             <Carousel  
                                 data={carouselItems}
                                 renderItem={renderItem.bind(this)}
@@ -81,7 +77,7 @@ export default class QuizSelection extends React.Component {
                                 itemWidth={300}
                                 useScrollView={true}  
                                 layout={'tinder'} 
-                                layoutCardOffset={`20`}     
+                                layoutCardOffset={20}     
                             />
                             { this.pagination }
                         </View>
@@ -89,9 +85,9 @@ export default class QuizSelection extends React.Component {
             );
         } else {
             return(
-                <View>
+                <View style={[style.container]}>
                 <View style={style.ConfigButtonContainer}>
-                    <TouchableOpacity style={{width: 0}} onPress={()=>{this.props.navigation.navigate('ConfigScreen')}}>
+                    <TouchableOpacity onPress={()=>{this.props.navigation.navigate('ConfigScreen')}}>
                         <Image style={style.ConfigButtonImage} source={require('../assets/images/ConfigIcon.png')}/>
                     </TouchableOpacity>
                 </View>
@@ -104,7 +100,7 @@ export default class QuizSelection extends React.Component {
                         itemWidth={300}
                         useScrollView={true}    
                         layout={'tinder'} 
-                        layoutCardOffset={`20`}         
+                        layoutCardOffset={20}         
                     />
                     { this.pagination }
                 </View>
@@ -206,14 +202,6 @@ const style= StyleSheet.create({
         display: 'flex',
         alignItems: 'flex-end',
         height: 70
-    },
-    backButton: {
-        width: 50, 
-        height: 50, 
-        marginRight: 80,
-        display: 'flex',
-        alignItems: 'flex-end'
-
     }
 });
 

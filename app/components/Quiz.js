@@ -19,6 +19,7 @@ const Quiz = (props) => {
     const [showNextButton, setShowNextButton] = useState(false)
     const [showScoreModal, setShowScoreModal] = useState(false)
     
+    
     const shuffleArray = array => {
         for(let i = array.length - 1; i > 0; i--){
             const j = Math.floor(Math.random() * (i + 1));
@@ -27,14 +28,12 @@ const Quiz = (props) => {
             array[j] = temp;
         }
     }
-    const shuffledCards = React.useMemo(() => {
+    let shuffledQuestions = React.useMemo(() => {
           
         return shuffleArray(allQuestions);
-      }, [])
-      
-      
+      }, []);
     
-
+        
     const validateAnswer = (selectedOption) => {
         let correct_option = allQuestions[currentQuestionIndex]['correct_option'];
         setCurrentOptionSelected(selectedOption);
