@@ -8,7 +8,7 @@ const carouselItems = [
     {
         title: 'Brasil',
         language: 'PT',
-        image: 'https://cdn.unifiedcommerce.com/content/product/large/5900511104059.jpg',
+        image: 'https://mediaim.expedia.com/localexpert/442936/c026f8aa-e933-4d8f-8ee9-c3a7555f335c.jpg',
         descPT: 'Responda perguntas sobre o país tropical mais famoso do mundo!',
         descES: '¡Responde preguntas sobre el país tropical más famoso del mundo!'
     },

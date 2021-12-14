@@ -1,15 +1,15 @@
 {
   "expo": {
     "name": "CCTI Quiz",
-    "slug": "CCTI Quiz",
+    "slug": "CCTI_Quiz",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon1.png",
+    "icon": "./assets/Untitledicon.png",
     "splash": {
-      "image": "./assets/splash3.png",
+      "image": "./assets/Untitledicon.png",
       "width": 100,
       "height": 100,
-      "backgroundColor": "#FFFFFF"
+      "backgroundColor": "#8082d6"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -22,7 +22,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon1.png",
+        "foregroundImage": "./assets/Untitledicon.png",
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.ilandev.QuizGame_EquadorXBrasil"

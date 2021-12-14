@@ -19,19 +19,20 @@ const Quiz = (props) => {
     const [showNextButton, setShowNextButton] = useState(false)
     const [showScoreModal, setShowScoreModal] = useState(false)
     
-    
-    const shuffleArray = array => {
-        for(let i = array.length - 1; i > 0; i--){
-            const j = Math.floor(Math.random() * (i + 1));
-            const temp = array[i];
-            array[i] = array[j];
-            array[j] = temp;
-        }
-    }
-    let shuffledQuestions = React.useMemo(() => {
+    //Metódo para randomizar as perguntas 
+
+    // const shuffleArray = array => {
+    //     for(let i = array.length - 1; i > 0; i--){
+    //         const j = Math.floor(Math.random() * (i + 1));
+    //         const temp = array[i];
+    //         array[i] = array[j];
+    //         array[j] = temp;
+    //     }
+    // }
+    // let shuffledQuestions = React.useMemo(() => {
           
-        return shuffleArray(allQuestions);
-      }, []);
+    //     return shuffleArray(allQuestions);
+    //   }, []);
     
         
     const validateAnswer = (selectedOption) => {
